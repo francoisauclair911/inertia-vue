@@ -27,6 +27,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    showProgress: {
+      type: Boolean,
+      default: true,
+    },
   },
   render(h, { props, data, children }) {
     return h('a', {
@@ -51,6 +55,7 @@ export default {
               replace: props.replace,
               preserveScroll: props.preserveScroll,
               preserveState: props.preserveState,
+              showProgress: props.showProgress,
             })
           }
         },
